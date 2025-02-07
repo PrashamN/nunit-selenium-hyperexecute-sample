@@ -23,15 +23,15 @@ matrix:
 solution: NUnitHyperTestDemo.sln
 
 pre:
-  - echo ${testVar}
+  - echo ${testvar}
 
 build:
   - dotnet build
 
 mergeArtifacts: true
 
-vars:
-  - testVar: prasham
+var:
+  - testvar: prasham
 
 uploadArtefacts:
   - name: ExecutionSnapshots
