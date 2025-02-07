@@ -17,7 +17,6 @@ cacheKey: '{{ checksum "packages.txt" }}'
 
 matrix:
   os: [win]
-  project: ["NUnitHyperTestDemo/NUnitHyperTestDemo.csproj"]
   testmethods: ["ToDoTest", "SeleniumPlayGround"]
 
 solution: NUnitHyperTestDemo.sln
@@ -30,8 +29,8 @@ build:
 
 mergeArtifacts: true
 
-var:
-  - testvar: prasham
+vars:
+  testvar: prasham
 
 uploadArtefacts:
   - name: ExecutionSnapshots
