@@ -9,23 +9,30 @@ runson: ${matrix.os}
 autosplit: true
 retryOnFailure: true
 
-maxRetries: 1
-concurrency: 2
+maxRetries: 0
+concurrency: 1
 parallelism: 1
 
 cacheKey: '{{ checksum "packages.txt" }}'
 
 matrix:
-  os: [mac, win, linux]
+  os: [win]
   project: ["NUnitHyperTestDemo/NUnitHyperTestDemo.csproj"]
   testmethods: ["ToDoTest", "SeleniumPlayGround"]
 
 solution: NUnitHyperTestDemo.sln
 
 pre:
+  - echo ${testVar}
+  - echo "Pre-Job: Running tests for project: $project, test methods: $testmethods"
+
+build:
   - dotnet build
 
 mergeArtifacts: true
+
+vars:
+  - testVar: prasham
 
 uploadArtefacts:
   - name: ExecutionSnapshots
