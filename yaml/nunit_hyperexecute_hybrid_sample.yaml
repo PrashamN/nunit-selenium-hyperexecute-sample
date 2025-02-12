@@ -54,4 +54,4 @@ testDiscovery:
 
 testRunnerCommand: dotnet test $solution --filter TestCategory=$test 
 
-jobLabel: [selenium-Nunit, hybrid, ${plat}]
+jobLabel: [selenium-Nunit, hybrid]
