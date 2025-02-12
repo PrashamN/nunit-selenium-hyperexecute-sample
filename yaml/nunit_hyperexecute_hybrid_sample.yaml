@@ -10,8 +10,8 @@ autosplit: true
 retryOnFailure: true
 
 maxRetries: 0
-concurrency: 1
-parallelism: 1
+concurrency: ${time}
+parallelism: ${time}
 
 cacheKey: '{{ checksum "packages.txt" }}'
 
@@ -31,13 +31,17 @@ mergeArtifacts: true
 
 vars:
   testvar: prasham
+  vartest: varsworking
+  bool: true
+  plat: linux
+  time: 1
 
 uploadArtefacts:
   - name: ExecutionSnapshots
     path:
      - NUnitHyperTestDemo/Reports/**
 
-report: true
+report: ${bool}
 partialReports:
     type: json
     location: NUnitHyperTestDemo/
@@ -50,4 +54,4 @@ testDiscovery:
 
 testRunnerCommand: dotnet test $solution --filter TestCategory=$test 
 
-jobLabel: [selenium-Nunit, hybrid]
+jobLabel: [selenium-Nunit, hybrid, ${bool}]
