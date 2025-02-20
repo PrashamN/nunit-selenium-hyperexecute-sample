@@ -1,6 +1,6 @@
 ---
 version: abcd
-globalTimeout: 150
+globalTimeout: sbcd
 testSuiteTimeout: 150
 testSuiteStep: 150
 
