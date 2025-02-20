@@ -1,6 +1,6 @@
 ---
-version: abcd
-globalTimeout: sbcd
+version: 0.1
+globalTimeout: 150
 testSuiteTimeout: 150
 testSuiteStep: 150
 
@@ -54,4 +54,4 @@ testDiscovery:
 
 testRunnerCommand: dotnet test $solution --filter TestCategory=$test 
 
-jobLabel: [selenium-Nunit, hybrid]
+jobLabel: [selenium-Nunit, hybrid, '${testvar}']
