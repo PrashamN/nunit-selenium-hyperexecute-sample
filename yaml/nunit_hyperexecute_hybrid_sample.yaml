@@ -30,12 +30,12 @@ build:
 mergeArtifacts: true
 
 vars:
-  testvar2: narayan + {vartest}
-  testvar: prasham + ${testvar2}
   vartest: varsworking
   bool: true
   plat: linux
   time: 1
+  testvar2: narayan + {vartest}
+  testvar: prasham + ${testvar2}
 
 uploadArtefacts:
   - name: ExecutionSnapshots
