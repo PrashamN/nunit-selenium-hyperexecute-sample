@@ -34,7 +34,7 @@ vars:
   bool: true
   plat: linux
   time: 1
-  testvar2: narayan + {vartest}
+  testvar2: narayan + ${vartest}
   testvar: prasham + ${testvar2}
 
 uploadArtefacts:
