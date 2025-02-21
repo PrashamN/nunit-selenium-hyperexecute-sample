@@ -30,7 +30,7 @@ build:
 mergeArtifacts: true
 
 vars:
-  testvar2: narayan + {testvar}
+  testvar2: narayan + {vartest}
   testvar: prasham + ${testvar2}
   vartest: varsworking
   bool: true
