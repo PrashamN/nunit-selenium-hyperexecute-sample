@@ -30,7 +30,8 @@ build:
 mergeArtifacts: true
 
 vars:
-  testvar: prasham
+  testvar2: narayan
+  testvar: prasham + ${testvar2}
   vartest: varsworking
   bool: true
   plat: linux
