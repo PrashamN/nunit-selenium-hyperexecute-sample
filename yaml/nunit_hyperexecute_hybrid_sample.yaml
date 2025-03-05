@@ -20,7 +20,6 @@ matrix:
   project: ["NUnitHyperTestDemo/NUnitHyperTestDemo.csproj"]
   testmethods: ["ToDoTest", "SeleniumPlayGround"]
 
-project: NUnitHyperTestDemo/NUnitHyperTestDemo.csproj
 solution: NUnitHyperTestDemo.sln
 
 pre:
