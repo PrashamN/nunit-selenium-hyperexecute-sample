@@ -3,10 +3,6 @@ version: 0.1
 globalTimeout: 150
 testSuiteTimeout: 150
 testSuiteStep: 150
-
-runtime:
-  language: dotnet
-  version: 5
   
 runson: ${matrix.os}
 
