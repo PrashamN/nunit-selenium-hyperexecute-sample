@@ -4,6 +4,10 @@ globalTimeout: 150
 testSuiteTimeout: 150
 testSuiteStep: 150
 
+runtime:
+  language: dotnet
+  version: 8
+  
 runson: ${matrix.os}
 
 autosplit: true
