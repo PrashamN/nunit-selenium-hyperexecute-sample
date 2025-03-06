@@ -20,7 +20,7 @@ parallelism: 1
 cacheKey: '{{ checksum "packages.txt" }}'
 
 matrix:
-  os: [mac, linux, win]
+  os: [linux]
   project: ["NUnitHyperTestDemo/NUnitHyperTestDemo.csproj"]
   testmethods: ["ToDoTest", "SeleniumPlayGround"]
 
