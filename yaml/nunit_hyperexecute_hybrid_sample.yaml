@@ -6,7 +6,7 @@ testSuiteStep: 150
 
 runtime:
   language: dotnet
-  version: 8
+  version: 5
   
 runson: ${matrix.os}
 
