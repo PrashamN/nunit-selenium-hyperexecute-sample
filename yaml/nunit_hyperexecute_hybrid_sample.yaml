@@ -46,7 +46,7 @@ testDiscovery:
 env:
   UserLevel: ${{ .secrets.UserLevel }}
   secret1: ${{ .secrets.secretas1 }}
-  secret2: ${{ .secrets.secret2 }}
+  secret2: ${{ .secrets.secret22 }}
 
 testRunnerCommand: dotnet test $solution --filter TestCategory=$test 
 
